@@ -34,7 +34,9 @@ if sys.version_info[0] < 3:
     # raise "Must be using Python 3"
 
 import logging.handlers
+
 import json_log_formatter
+
 formatter = json_log_formatter.JSONFormatter()
 
 logger = logging.getLogger("query")
@@ -46,7 +48,7 @@ stream_handler.setFormatter(formatter)
 
 logFilePath = os.path.join(curdir, os.path.pardir, os.path.pardir, "logs", "root.log")
 file_handler = logging.handlers.TimedRotatingFileHandler(
-    filename=logFilePath, when='midnight', backupCount=30)
+    filename=log_file_path, when='midnight', backupCount=30)
 file_handler.setFormatter(formatter)
 file_handler.setLevel(logging.INFO)
 
