@@ -1,0 +1,170 @@
+{
+  "_id": "5a65c7240c94ea10609df6c7",
+  "storyName": "book cab",
+  "intentName": "book_cab",
+  "apiTrigger": false,
+  "speechResponse": "Ok, your cab is booked. From {{ parameters[\"from\"]}} to {{ parameters[\"destination\"]}}.",
+  "parameters": [
+    {
+      "id": "5a65c7240c94ea10609df6c5",
+      "name": "from",
+      "required": true,
+      "type": "free_text",
+      "prompt": "please enter your starting point"
+    },
+    {
+      "id": "5a65c7240c94ea10609df6c6",
+      "name": "destination",
+      "required": true,
+      "type": "free_text",
+      "prompt": "please enter your destination."
+    }
+  ],
+  "labeledSentences": [
+    {
+      "id": "5a65c7b60c94ea10609df6cc",
+      "data": [
+        [
+          "book",
+          "NN",
+          "O"
+        ],
+        [
+          "me",
+          "PRP",
+          "O"
+        ],
+        [
+          "a",
+          "DT",
+          "O"
+        ],
+        [
+          "cab",
+          "NN",
+          "O"
+        ],
+        [
+          "from",
+          "IN",
+          "O"
+        ],
+        [
+          "cochin",
+          "NN",
+          "B-from"
+        ],
+        [
+          "to",
+          "TO",
+          "O"
+        ],
+        [
+          "trivandrum",
+          "VB",
+          "B-destination"
+        ]
+      ]
+    },
+    {
+      "id": "5a65c7e00c94ea10609df6d0",
+      "data": [
+        [
+          "I",
+          "PRP",
+          "O"
+        ],
+        [
+          "want",
+          "VBP",
+          "O"
+        ],
+        [
+          "a",
+          "DT",
+          "O"
+        ],
+        [
+          "cab",
+          "NN",
+          "O"
+        ],
+        [
+          "from",
+          "IN",
+          "O"
+        ],
+        [
+          "kak",
+          "NN",
+          "B-from"
+        ],
+        [
+          "to",
+          "TO",
+          "O"
+        ],
+        [
+          "idap",
+          "VB",
+          "B-destination"
+        ]
+      ]
+    },
+    {
+      "id": "5a65c8100c94ea10609df6d5",
+      "data": [
+        [
+          "cam",
+          "NN",
+          "O"
+        ],
+        [
+          "from",
+          "IN",
+          "O"
+        ],
+        [
+          "koda",
+          "NN",
+          "B-from"
+        ],
+        [
+          "to",
+          "TO",
+          "O"
+        ],
+        [
+          "chala",
+          "VB",
+          "B-destination"
+        ]
+      ]
+    },
+    {
+      "id": "5a65c8910c94ea10609df700",
+      "data": [
+        [
+          "book",
+          "NN",
+          "O"
+        ],
+        [
+          "me",
+          "PRP",
+          "O"
+        ],
+        [
+          "a",
+          "DT",
+          "O"
+        ],
+        [
+          "cab",
+          "NN",
+          "O"
+        ]
+      ]
+    }
+  ]
+}

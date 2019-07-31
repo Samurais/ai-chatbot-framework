@@ -10,6 +10,7 @@ from app.core.featuresExtractor import extractFeatures
 
 
 def sentToFeatures(sent):
+    print("sentToFeatures sent:", sent)
     return [extractFeatures(sent, i) for i in range(len(sent))]
 
 

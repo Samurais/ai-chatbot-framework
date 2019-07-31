@@ -2,6 +2,7 @@
 def extractFeatures(sent, i):
     word = sent[i][0]
     postag = sent[i][1]
+
     features = [
         'bias',
         'word.lower=' + word.lower(),
@@ -13,6 +14,8 @@ def extractFeatures(sent, i):
         'postag=' + postag,
         'postag[:2]=' + postag[:2],
     ]
+
+    
     if i > 0:
         word1 = sent[i - 1][0]
         postag1 = sent[i - 1][1]
